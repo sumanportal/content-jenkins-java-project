@@ -20,7 +20,7 @@ pipeline {
         echo "My Branch Name: ${env.BRANCH_NAME}"
 
         script {
-          #def myLib = new sumanportal.git.gitStuff();
+          
 
           echo "My Commit: ${myLib.gitCommit("${env.WORKSPACE}/.git")}"
         }
